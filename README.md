@@ -1,3 +1,7 @@
+# API Gateway
+
+## With Out Eureka Service
+
 ```mermaid
 flowchart TD
     A[Client / UI]
@@ -17,5 +21,18 @@ flowchart TD
     D --> G
     E --> H
 ```
+
+
+## With Eureka Service
+```mermaid
+flowchart TD
+    A[Client] --> B[API Gateway]
+    B --> C[Eureka Server]
+    C --> D[Order Service]
+    C --> E[Inventory Service]
+```
+
+
+
 
 
