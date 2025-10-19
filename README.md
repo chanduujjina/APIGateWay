@@ -4,14 +4,18 @@ flowchart TD
     B[API Gateway]
     C[Order Service]
     D[Inventory Service]
-    E[(Order DB)]
-    F[(Inventory DB)]
+    E[Shipment Service]
+    F[(Order DB)]
+    G[(Inventory DB)]
+    H[(Shipment DB)]
 
     A --> B
     B --> C
     B --> D
-    C --> E
-    D --> F
+    B --> E
+    C --> F
+    D --> G
+    E --> H
 ```
 
 
