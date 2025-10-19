@@ -28,6 +28,16 @@ flowchart TD
 
 - The gateway knows where to send requests because the URLs are hardcoded.
 
+| Feature                  | Without Eureka                                                    |
+| ------------------------ | ----------------------------------------------------------------- |
+| **Service registration** | Manual — you configure URLs in `application.yml`                  |
+| **Discovery**            | Static — Gateway uses hardcoded routes                            |
+| **Scaling**              | Difficult — adding new service instances requires updating config |
+| **Fault tolerance**      | Limited — Gateway can’t detect if a service goes down             |
+| **Dev simplicity**       | ✅ Easy for small setups                                           |
+| **Cloud readiness**      | ❌ Not ideal for dynamic or containerized environments             |
+
+
 ## With Eureka Service
 ```mermaid
 flowchart TD
