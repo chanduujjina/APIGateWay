@@ -32,12 +32,18 @@ flowchart TD
     D[Order Service]
     E[Inventory Service]
     F[Shipment Service]
+    G[(Order DB)]
+    H[(Inventory DB)]
+    I[(Shipment DB)]
 
     A --> B
     B --> C
     C --> D
     C --> E
-    C --> F 
+    C --> F
+    D --> G
+    E --> H
+    F --> I 
 ```
 
 
