@@ -1,5 +1,4 @@
 ## APIGateWay
-
 flowchart TD
     A[Client / UI / Mobile App] -->|Single Entry Point| B(API Gateway)
     B -->|Route 1| C[Order Service (8082)]
