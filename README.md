@@ -61,6 +61,15 @@ flowchart TD
     F --> I 
 ```
 
+🧠 Characteristics
+| Feature                  | With Eureka                                                   |
+| ------------------------ | ------------------------------------------------------------- |
+| **Service registration** | ✅ Automatic (services register on startup)                    |
+| **Discovery**            | ✅ Dynamic — Gateway looks up service names from Eureka        |
+| **Scaling**              | ✅ Easy — Add new instances, Eureka auto-discovers them        |
+| **Fault tolerance**      | ✅ Gateway avoids dead services automatically                  |
+| **Dev complexity**       | ⚙️ Slightly more setup (needs Eureka Server)                  |
+| **Cloud readiness**      | ✅ Perfect for containerized environments (Docker, Kubernetes) |
 
 
 
