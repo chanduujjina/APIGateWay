@@ -26,10 +26,18 @@ flowchart TD
 ## With Eureka Service
 ```mermaid
 flowchart TD
-    A[Client] --> B[API Gateway]
-    B --> C[Eureka Server]
-    C --> D[Order Service]
-    C --> E[Inventory Service]
+    A[Client]
+    B[API Gateway]
+    C[Eureka Server]
+    D[Order Service]
+    E[Inventory Service]
+    F[Shipment Service]
+
+    A --> B
+    B --> C
+    C --> D
+    C --> E
+    C --> F 
 ```
 
 
