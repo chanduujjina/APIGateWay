@@ -1,6 +1,6 @@
 ```mermaid
 flowchart TD
-    A[Client / UI / Mobile App]
+    A[Client / UI]
     B[API Gateway]
     C[Order Service]
     D[Inventory Service]
