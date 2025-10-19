@@ -3,7 +3,7 @@ flowchart TD
     A[Client / UI / Mobile App]
     B[API Gateway]
     C[Order Service]
-    D[Inventory Service (8081)]
+    D[Inventory Service]
     E[(Order DB)]
     F[(Inventory DB)]
 
